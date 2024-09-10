@@ -1,46 +1,48 @@
 body {
-    background: linear-gradient(to bottom right, #ffcc00, #ff66cc);
-	cursor: url('http://ashare.mooo.com/uploads/83523.png'), auto;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #333333;
-    text-align: center;
+    background: #f0f0f0; /* A more neutral background color */
+    font-family: Arial, sans-serif; /* A more modern, clean font */
+    color: #333; /* Standard text color */
+    text-align: left; /* Align text to the left */
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 main {
-    background-color: #ffffff;
-    border: 5px solid #ff66cc;
-    border-radius: 15px;
+    background-color: #ffffff; /* White background for main content */
+    border: 1px solid #cccccc; /* Lighter border color */
+    border-radius: 8px; /* Smaller border radius */
     padding: 20px;
-    box-shadow: 5px 5px 15px #888888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Restrict maximum width */
+    margin: 20px auto; /* Center main content with margin */
 }
 
 h1, h2 {
-    color: #ff33cc;
-    text-shadow: 2px 2px #ffcc00;
+    color: #000000; /* Darker text color */
+    text-shadow: none; /* Remove text shadow for a cleaner look */
+    margin-bottom: 10px; /* Margin below headings */
 }
 
 a {
-    color: #ff66cc;
-    text-decoration: none;
-    font-weight: bold;
+    color: #0066cc; /* Standard link color */
+    text-decoration: none; /* No underline */
+    font-weight: normal; /* Normal font weight */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 ol {
-    text-align: left;
-    margin: 0 auto;
-    display: inline-block;
+    text-align: left; /* Ensure ordered list is aligned left */
+    margin: 0;
+    padding: 0;
 }
 
 li {
-    margin: 10px 0;
+    margin: 8px 0; /* Reduced margin for list items */
 }
 
 p {
-    margin: 10px 0;
+    margin: 8px 0; /* Reduced margin for paragraphs */
 }
