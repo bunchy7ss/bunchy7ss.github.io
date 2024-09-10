@@ -1,48 +1,158 @@
-body {
-    background: #f0f0f0; /* A more neutral background color */
-    font-family: Arial, sans-serif; /* A more modern, clean font */
-    color: #333; /* Standard text color */
-    text-align: left; /* Align text to the left */
-    margin: 0;
-    padding: 0;
+/* General Body and Text Styling */
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, dd, dt {
+  font-family: verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-main {
-    background-color: #ffffff; /* White background for main content */
-    border: 1px solid #cccccc; /* Lighter border color */
-    border-radius: 8px; /* Smaller border radius */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 1200px; /* Restrict maximum width */
-    margin: 20px auto; /* Center main content with margin */
+h1, h2, h3, h4 {
+  font-family: Tahoma;
 }
-
-h1, h2 {
-    color: #000000; /* Darker text color */
-    text-shadow: none; /* Remove text shadow for a cleaner look */
-    margin-bottom: 10px; /* Margin below headings */
+a:link, a:visited {
+  text-decoration: none;
+  color: #009;
 }
-
-a {
-    color: #0066cc; /* Standard link color */
-    text-decoration: none; /* No underline */
-    font-weight: normal; /* Normal font weight */
-}
-
 a:hover {
-    text-decoration: underline; /* Underline on hover */
+  text-decoration: none;
+  color: #000;
+}
+a:active {
+  text-decoration: none;
+  color: #009;
 }
 
-ol {
-    text-align: left; /* Ensure ordered list is aligned left */
-    margin: 0;
-    padding: 0;
+/* Header Styles */
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
 }
 
-li {
-    margin: 8px 0; /* Reduced margin for list items */
+/* Layout and Spacing */
+div#static-index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#static-more > div {
+  float: left;
+  width: 25%;
+}
+div#static-more > div > ul {
+  margin-top: 2em;
+}
+div#footer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 120%;
+  clear: both;
+  color: #ccc;
 }
 
-p {
-    margin: 8px 0; /* Reduced margin for paragraphs */
+/* Input and Textarea */
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  background: #ffc;
+}
+
+/* Lists */
+ul.flat-list {
+  margin: 0;
+  padding: 0;
+}
+ul.flat-list li {
+  display: inline;
+  list-style-type: none;
+  font-weight: 700;
+  margin: 0 1em 0 0;
+}
+
+/* Blocks and Notices */
+div.blocked {
+  border: 2px solid;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+  background: #fcc;
+  color: red;
+}
+div.notice {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  color: red;
+}
+
+
+/* Quote and Other Elements */
+div.quote {
+  margin-top: 10px;
+  padding: 12px;
+  text-align: justify;
+  font-style: italic;
+  font-size: 12px;
+  font-family: sans-serif, arial, tahoma;
+  border: 1px solid;
+  background: #f6f6f6 url(./counter/quote.gif) no-repeat top right;
+  border-color: #bababa;
+}
+
+/* Auto-complete Styles */
+div.auto_complete {
+  width: 350px;
+}
+div.auto_complete ul {
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+div.auto_complete ul li {
+  margin: 0;
+  padding: 3px;
+}
+div.auto_complete ul li.selected {
+  background-color: #ffb;
+}
+div.auto_complete ul strong.highlight {
+  color: #800;
+}
+
+/* Sidebar and Footer */
+div#related {
+  margin: 0 3em 1em 0;
+}
+div#related > div.tag-column {
+  float: left;
+  margin: 0 2em 2em 0;
+  max-width: 12em;
+  height: 35em;
+}
+div#related > div.tag-column > a {
+  margin-right: 1em;
+}
+div.sidebar li {
+  list-style-type: none;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Styling for Specific Classes and IDs */
+a.original-file-changed#highres {
+  font-weight: 700;
+  color: #0030fa;
+}
+div.status-notice {
+  border: 1px solid red;
+  padding: 10px;
+  background: #ffdddd;
+  color: red;
 }
