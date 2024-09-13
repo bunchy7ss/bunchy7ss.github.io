@@ -1,158 +1,46 @@
-/* General Body and Text Styling */
-body, div, h1, h2, h3, h4, h5, h6, p, ul, li, dd, dt {
-  font-family: verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+body {
+    background: linear-gradient(to bottom right, #ffcc00, #ff66cc);
+	cursor: url('http://ashare.mooo.com/uploads/83523.png'), auto;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
-h1, h2, h3, h4 {
-  font-family: Tahoma;
+
+main {
+    background-color: #ffffff;
+    border: 5px solid #ff66cc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px #888888;
 }
-a:link, a:visited {
-  text-decoration: none;
-  color: #009;
+
+h1, h2 {
+    color: #ff33cc;
+    text-shadow: 2px 2px #ffcc00;
 }
+
+a {
+    color: #ff66cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 a:hover {
-  text-decoration: none;
-  color: #000;
-}
-a:active {
-  text-decoration: none;
-  color: #009;
+    text-decoration: underline;
 }
 
-/* Header Styles */
-h1 {
-  font-size: 2em;
-}
-h2 {
-  font-size: 1.8em;
-}
-h3 {
-  font-size: 1.6em;
-}
-h4 {
-  font-size: 1.4em;
+ol {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
 }
 
-/* Layout and Spacing */
-div#static-index {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div#static-more > div {
-  float: left;
-  width: 25%;
-}
-div#static-more > div > ul {
-  margin-top: 2em;
-}
-div#footer {
-  margin-top: 1em;
-  text-align: center;
-  font-size: 120%;
-  clear: both;
-  color: #ccc;
+li {
+    margin: 10px 0;
 }
 
-/* Input and Textarea */
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
-  background: #ffc;
-}
-
-/* Lists */
-ul.flat-list {
-  margin: 0;
-  padding: 0;
-}
-ul.flat-list li {
-  display: inline;
-  list-style-type: none;
-  font-weight: 700;
-  margin: 0 1em 0 0;
-}
-
-/* Blocks and Notices */
-div.blocked {
-  border: 2px solid;
-  padding: 1em;
-  margin: 1em;
-  text-align: center;
-  background: #fcc;
-  color: red;
-}
-div.notice {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 1em;
-  padding-left: 20px;
-  color: red;
-}
-
-
-/* Quote and Other Elements */
-div.quote {
-  margin-top: 10px;
-  padding: 12px;
-  text-align: justify;
-  font-style: italic;
-  font-size: 12px;
-  font-family: sans-serif, arial, tahoma;
-  border: 1px solid;
-  background: #f6f6f6 url(./counter/quote.gif) no-repeat top right;
-  border-color: #bababa;
-}
-
-/* Auto-complete Styles */
-div.auto_complete {
-  width: 350px;
-}
-div.auto_complete ul {
-  border: 1px solid;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style-type: none;
-}
-div.auto_complete ul li {
-  margin: 0;
-  padding: 3px;
-}
-div.auto_complete ul li.selected {
-  background-color: #ffb;
-}
-div.auto_complete ul strong.highlight {
-  color: #800;
-}
-
-/* Sidebar and Footer */
-div#related {
-  margin: 0 3em 1em 0;
-}
-div#related > div.tag-column {
-  float: left;
-  margin: 0 2em 2em 0;
-  max-width: 12em;
-  height: 35em;
-}
-div#related > div.tag-column > a {
-  margin-right: 1em;
-}
-div.sidebar li {
-  list-style-type: none;
-  margin: 0;
-  word-wrap: break-word;
-}
-
-/* Styling for Specific Classes and IDs */
-a.original-file-changed#highres {
-  font-weight: 700;
-  color: #0030fa;
-}
-div.status-notice {
-  border: 1px solid red;
-  padding: 10px;
-  background: #ffdddd;
-  color: red;
+p {
+    margin: 10px 0;
 }
